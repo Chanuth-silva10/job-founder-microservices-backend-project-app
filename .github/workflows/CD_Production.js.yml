@@ -86,7 +86,7 @@ jobs:
           application_name: Project-assesment-backend
           environment_name: Project-assesment-backend-env
           version_label: "ver-${{ github.sha }}"
-          region: us-east-2
+          region: eu-central-1
           deployment_package: deploy.zip
 
       
