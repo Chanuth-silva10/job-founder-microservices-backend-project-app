@@ -7,7 +7,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "dev": "node server.js",
-    "test":"jest"
+    "test":" jest"
   },
   "author": "chanuth",
   "license": "ISC",
