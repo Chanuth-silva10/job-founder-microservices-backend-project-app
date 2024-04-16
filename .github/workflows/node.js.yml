@@ -26,4 +26,24 @@ jobs:
       run: |
         npm ci
         npm test
+    
+    - name: Test Blog Service
+      working-directory: ./blog
+      run: |
+        npm ci
+        npm test
+
+    - name: Test Job Service
+      working-directory: ./job
+      run: |
+        npm ci
+        npm test
+
+    - name: Test User Service
+      working-directory: ./user
+      run: |
+        npm ci
+        npm test
+
+
    
