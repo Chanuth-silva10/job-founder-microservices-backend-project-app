@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "nodemon server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "test":"jest"
   },
   "author": "chanuth",
   "license": "ISC",
