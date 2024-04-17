@@ -58,6 +58,7 @@ services:
     env_file:
       - ./job/config/config.env
 
+
   user:
     build:
       dockerfile: Dockerfile
