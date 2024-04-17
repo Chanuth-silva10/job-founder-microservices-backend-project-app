@@ -1,7 +1,7 @@
 import express from "express";
 import { dbConnection } from "./database/dbConnection.js";
 import applicationRouter from "./routes/applicationRoutes.js";
-import { config } from "dotenv";
+import { config } from  "dotenv";
 import cors from "cors";
 import { errorMiddleware } from "./middlewares/error.js";
 import cookieParser from "cookie-parser";
