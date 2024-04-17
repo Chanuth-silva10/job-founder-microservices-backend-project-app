@@ -90,7 +90,7 @@ jobs:
           region: us-east-1
           deployment_package: deploy.zip
           wait_for_deployment: true
-          recovery_wait_time: 60
+          wait_for_environment_recovery: true
 
     env:
           DEBUG: true
