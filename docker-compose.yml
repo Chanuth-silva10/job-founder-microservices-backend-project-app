@@ -1,13 +1,5 @@
 version: "3"
 services:
-  nosql-db:
-    image: mvertes/alpine-mongo
-    ports:
-      - "27018:27017"
-    container_name: nosql-db
-    volumes:
-      - ./db/:/data/db
-
   application:
     build:
       dockerfile: Dockerfile
@@ -16,8 +8,6 @@ services:
     ports:
       - "4003:4003"
     restart: always
-    depends_on:
-      - "nosql-db"
     volumes:
       - .:/app
       - /app/application/node_modules
@@ -33,8 +23,6 @@ services:
     ports:
       - "4004:4004"
     restart: always
-    depends_on:
-      - "nosql-db"
     volumes:
       - .:/app
       - /app/blog/node_modules
@@ -50,8 +38,6 @@ services:
     ports:
       - "4001:4001"
     restart: always
-    depends_on:
-      - "nosql-db"
     volumes:
       - .:/app
       - /app/job/node_modules
@@ -67,8 +53,6 @@ services:
     ports:
       - "4002:4002"
     restart: always
-    depends_on:
-      - "nosql-db"
     volumes:
       - .:/app/
       - /app/user/node_modules
