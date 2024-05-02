@@ -28,6 +28,7 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
     resume.tempFilePath
   );
 
+  
   if (!cloudinaryResponse || cloudinaryResponse.error) {
     console.error(
       "Cloudinary Error:",
