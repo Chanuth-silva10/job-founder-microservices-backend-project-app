@@ -4,6 +4,7 @@ import { Application } from "../models/applicationSchema.js";
 import { Job } from "../models/jobSchema.js";
 import cloudinary from "cloudinary";
 
+//TT
 export const postApplication = catchAsyncErrors(async (req, res, next) => {
   console.log("User Details ------- " + req.user);
   const { role } = req.user;
@@ -51,6 +52,9 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
     return next(new ErrorHandler("Job not found!", 404));
   }
 
+
+
+//check CI
   const employerID = {
     user: jobDetails.postedBy,
     role: "Employer",
