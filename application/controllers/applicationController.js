@@ -4,7 +4,7 @@ import { Application } from "../models/applicationSchema.js";
 import { Job } from "../models/jobSchema.js";
 import cloudinary from "cloudinary";
 
-//TT
+//TestCi/CD
 export const postApplication = catchAsyncErrors(async (req, res, next) => {
   console.log("User Details ------- " + req.user);
   const { role } = req.user;
