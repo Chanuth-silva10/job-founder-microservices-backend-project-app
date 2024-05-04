@@ -51,6 +51,7 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
     return next(new ErrorHandler("Job not found!", 404));
   }
 
+  
   const employerID = {
     user: jobDetails.postedBy,
     role: "Employer",
