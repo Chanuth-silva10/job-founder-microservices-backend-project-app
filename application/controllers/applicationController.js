@@ -18,6 +18,7 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
     return next(new ErrorHandler("Resume File Required!", 400));
   }
 
+
   
   const { resume } = req.files;
   const allowedFormats = ["image/png", "image/jpeg", "image/webp"];
