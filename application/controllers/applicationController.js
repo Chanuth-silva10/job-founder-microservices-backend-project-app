@@ -148,6 +148,7 @@ export const jobseekerDeleteApplication = catchAsyncErrors(
       return next(new ErrorHandler("Application not found!", 404));
 
     }
+    
     await application.deleteOne();
     res.status(200).json({
       success: true,
