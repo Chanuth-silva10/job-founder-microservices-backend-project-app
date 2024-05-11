@@ -19,7 +19,7 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
   }
 
 
-  
+
   const { resume } = req.files;
   const allowedFormats = ["image/png", "image/jpeg", "image/webp"];
   if (!allowedFormats.includes(resume.mimetype)) {
@@ -130,6 +130,7 @@ export const jobseekerGetAllApplications = catchAsyncErrors(
     });
   }
 );
+
 
 export const jobseekerDeleteApplication = catchAsyncErrors(
   async (req, res, next) => {
