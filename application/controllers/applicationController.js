@@ -19,7 +19,8 @@ export const postApplication = catchAsyncErrors(async (req, res, next) => {
     return next(new ErrorHandler("Resume File Required!", 400));
   }
 
-  
+
+
   const { resume } = req.files;
   const allowedFormats = ["image/png", "image/jpeg", "image/webp"];
   if (!allowedFormats.includes(resume.mimetype)) {
@@ -131,6 +132,7 @@ export const jobseekerGetAllApplications = catchAsyncErrors(
   }
 );
 
+
 export const jobseekerDeleteApplication = catchAsyncErrors(
   async (req, res, next) => {
     const { role } = req.user;
@@ -144,6 +146,7 @@ export const jobseekerDeleteApplication = catchAsyncErrors(
     const application = await Application.findById(id);
     if (!application) {
       return next(new ErrorHandler("Application not found!", 404));
+      
     }
     await application.deleteOne();
     res.status(200).json({
