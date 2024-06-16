@@ -8,8 +8,6 @@
 - [Running the Application](#running-the-application)
 - [Services](#services)
 - [Deployment](#deployment)
-- [Contact](#contact)
-- [License](#license)
 
 ## Introduction
 The Job Founder Microservices Backend Project is a comprehensive backend application designed to manage job listings, user profiles, and job applications. The application is built using a microservices architecture, ensuring scalability, maintainability, and ease of deployment.
