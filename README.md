@@ -25,11 +25,11 @@ This project follows a microservices architecture, where each service is respons
 - **Configuration Service**: Manages configuration settings for all services.
 
 ## Technologies Used
-- **Java**: Primary programming language.
-- **Spring Boot**: Framework for building the microservices.
+- **JS**: Primary programming language.
+- **Node.js & Express.js**: Framework for building the microservices.
 - **Docker**: Containerization of services.
 - **Docker Compose**: Orchestration of multi-container Docker applications.
-- **MySQL**: Database for storing persistent data.
+- **MongoDB**: Database for storing data.
 - **Kafka**: Messaging queue for inter-service communication.
 
 ## Installation
