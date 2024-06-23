@@ -57,11 +57,11 @@ docker-compose up
 After setting up and starting the services, the application will be accessible at:
 
 ```bash
-User Service: http://localhost:4003 \n
+User Service:        http://localhost:4003
 Job Listing Service: http://localhost:4002
 Application Service: http://localhost:4001
-Blog Service: http://localhost:4004
-API Gateway: http://localhost:4000
+Blog Service:        http://localhost:4004
+API Gateway:         http://localhost:4000
 ```
 
 ## Services
